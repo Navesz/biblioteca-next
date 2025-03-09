@@ -1,0 +1,50 @@
+{
+  "name": "biblioteca-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "seed": "node scripts/seed-db.js",
+    "seed:genres": "node scripts/seed-genres.js",
+    "check-mongodb": "node scripts/check-mongodb.js",
+    "mongodb:start": "node scripts/start-mongodb.js",
+    "mongodb:setup": "node scripts/setup-mongodb-atlas.js",
+    "mongodb:install": "node scripts/install-mongodb-windows.js",
+    "mongodb:docker": "node scripts/start-mongodb-docker.js",
+    "mongodb:help": "node scripts/mongodb-helper.js",
+    "mongodb:local": "node scripts/start-mongodb-local.js",
+    "docker:dev": "docker-compose -f docker-compose.dev.yml up -d",
+    "docker:dev:down": "docker-compose -f docker-compose.dev.yml down",
+    "docker:prod": "docker-compose up -d --build",
+    "docker:prod:down": "docker-compose down",
+    "github:setup": "node setup-github.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.8",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.5.0",
+    "next": "^14.0.0",
+    "next-auth": "^4.23.1",
+    "postcss": "^8.4.28",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "swr": "^2.2.2",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "typescript": "^5.2.2"
+  }
+}
